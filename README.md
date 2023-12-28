@@ -1,4 +1,27 @@
 ![bangdan-screen](https://socialify.git.ci/9075512/bangdan-screen/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+## 项目描述
+
+
+根据奔跑吧面条的**[vue-big-screen](https://gitee.com/MTrun/big-screen-vue-datav)**开源框架基础上进行修改。
+
+- 项目需要全屏展示（按 F11）。
+
+- 项目部分区域使用了全局注册方式，增加了打包体积，在实际运用中请使用 **按需引入**。
+
+- 项目环境：Vue-cli、DataV、Echarts、Webpack、Npm、Node，axios,mock。
+
+- 请拉取 master 分支的代码，其余分支是开发分支。
+
+- 在项目public目录下存放地图数据合集，根据地市编存放。
+
+
+友情链接：
+
+1. [Vue 官方文档](https://gitee.com/link?target=https%3A%2F%2Fcn.vuejs.org%2Fv2%2Fguide%2Finstance.html)
+2. [DataV 官方文档](https://gitee.com/link?target=http%3A%2F%2Fdatav.jiaminghi.com%2Fguide%2F)
+3. [echarts 实例](https://gitee.com/link?target=https%3A%2F%2Fecharts.apache.org%2Fexamples%2Fzh%2Findex.html)，[echarts API 文档](https://gitee.com/link?target=https%3A%2F%2Fecharts.apache.org%2Fzh%2Fapi.html%23echarts)
+4. [mock.js官网](http://mockjs.com/examples.html)
+5. [axios官网](https://axios-http.com/)
 
 ## 使用介绍
 
@@ -61,7 +84,7 @@ export default {
 
 封装了除面条外个别用到的组件
 
-### 5.1 message消息提示
+### message消息提示
 
 因为刚开始没想着用第三方提示库，自己简单封装了一个。
 
@@ -83,7 +106,7 @@ this.$Message.warning(res.msg)
 | text | 提示文字 |    -    | string |    -    |
 | type | 弹窗类型 | warning | string | warning |
 
-### 5.2 外边框
+### 外边框
 
 因为我的项目外边框几乎一样，还有title,所以封装了此组件。
 
@@ -100,3 +123,12 @@ this.$Message.warning(res.msg)
 | 参数  | 描述 | 默认值 |  类型  | 可选值 |
 | :---: | :--: | :----: | :----: | :----: |
 | title | 标头 |   -    | string |   -    |
+
+## 免责声明
+
+本项目仅供开发学习使用，任何人用于任何用途均与项目作者无关！
+
+
+## 免责声明
+
+本项目仅供开发学习使用，任何人用于任何用途均与项目作者无关！
