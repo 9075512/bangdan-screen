@@ -2,7 +2,7 @@
 ## 项目描述
 
 
-根据奔跑吧面条的**[vue-big-screen](https://gitee.com/MTrun/big-screen-vue-datav)**开源框架基础上进行修改。
+根据奔跑吧面条的[vue-big-screen](https://gitee.com/MTrun/big-screen-vue-datav)开源框架基础上进行修改。
 
 - 项目需要全屏展示（按 F11）。
 
@@ -128,7 +128,3 @@ this.$Message.warning(res.msg)
 
 本项目仅供开发学习使用，任何人用于任何用途均与项目作者无关！
 
-
-## 免责声明
-
-本项目仅供开发学习使用，任何人用于任何用途均与项目作者无关！
