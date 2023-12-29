@@ -1,7 +1,7 @@
 
 let UtilVar = {
     ENC: false, //返回结果是否加密
-    baseUrl: `http://localhost:8888`,
+    baseUrl: process.env.VUE_APP_BASE_API,
     code: 401,
 }
 const runtimeType = {
@@ -9,7 +9,7 @@ const runtimeType = {
         /**
          * 通过打包配置打某个环境的api地址
          */
-        UtilVar.baseUrl = `http://localhost:8888`
+        UtilVar.baseUrl = process.env.VUE_APP_BASE_API
     },
     //测试环境
     test:()=>{
@@ -24,6 +24,6 @@ const runtimeType = {
 console.log(process.env);
 
 //通过打包配置打某个环境的api地址
-runtimeType[process.env.VUE_APP_URL_ENV]()
+// runtimeType[process.env.VUE_APP_BASE_API]()
 export default UtilVar
 

@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from './router'
 import store from './store'
 import {loading,borderBox13,digitalFlop,capsuleChart,borderBox8} from '@jiaminghi/data-view'
-import { Radio,Button,RadioGroup } from 'element-ui'
+import { Radio,Button,RadioGroup,DatePicker } from 'element-ui'
 import Echart from './components/echart/index.vue'
 import ItemWrap from './components/item-wrap/item-wrap.vue'
 import Message from './components/message/message.vue'
@@ -16,7 +16,8 @@ import "@/assets/css/index.scss"
 
 import * as filters from '@/directives/filters'
 
-require('./mock/mock')//是否使用mock
+//是否使用mock
+// require('./mock/mock')
 Vue.config.productionTip = false;
 
 // 自定义组件
@@ -29,6 +30,7 @@ Vue.prototype.$Message =  Messages
 Vue.use(Radio);
 Vue.use(Button);
 Vue.use(RadioGroup)
+Vue.use(DatePicker)
 
 // datav组件
 Vue.use(loading)

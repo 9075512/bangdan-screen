@@ -27,7 +27,6 @@ axios.interceptors.request.use(function (config) {
  * @响应拦截
  */
 axios.interceptors.response.use(response => {
-  
     if (response.status !== 200) {
         return Promise.reject(response)
     }

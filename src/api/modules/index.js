@@ -68,7 +68,7 @@ export const currentPage =  (key,param)=> {
  * @param {*} param 
  */
  export const currentGET=  (key,param)=> {
-    return API.GET(paramType[key], param)
+    return API.GET('/monitor.php', param)
 }
 /**
  * 通用POST

@@ -33,7 +33,7 @@ export default {
 </script>
 <style lang='scss' scoped>
 $item-title-height: 38px;
-$item_title_content-height: calc(100% - 38px);
+$item_title_content-height: calc(100% - 38px - 42px);
 
 .lr_titles {
   box-sizing: border-box;

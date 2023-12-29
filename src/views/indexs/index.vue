@@ -4,7 +4,7 @@
     <div class="contetn_right">
       <ItemWrap
         class="contetn_left-bottom contetn_lr-item"
-        title="报警次数"
+        title="磅单统计"
       >
         <RightTop />
       </ItemWrap>
@@ -56,6 +56,7 @@ export default {
 <style lang="scss" scoped>
 // 内容
 .contents {
+  box-sizing: border-box;
   .contetn_right {
     width: 1920px;
     box-sizing: border-box;

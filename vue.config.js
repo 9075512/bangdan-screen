@@ -109,7 +109,19 @@ module.exports = {
   parallel: require('os').cpus().length > 1,
 
   devServer: {
-    // 配置多个代理
+    host: '0.0.0.0',
+    open: true,
+    proxy: {
+      // detail: https://cli.vuejs.org/config/#devserver-proxy
+      [process.env.VUE_APP_BASE_API]: {
+        target: `http://b.cq2000.cn`,
+        changeOrigin: true,
+        pathRewrite: {
+          ['^' + process.env.VUE_APP_BASE_API]: ''
+        }
+      }
+    },
+    disableHostCheck: true
   },
   pluginOptions: {
   }

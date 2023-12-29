@@ -20,6 +20,7 @@
               <span class="title-text">磅单信息可视化平台</span>
             </div>
           </div>
+          
           <div class="timers">
             {{ dateYear }} {{ dateWeek }} {{ dateDay }}
             <i
@@ -85,7 +86,7 @@ export default {
       let timer = setTimeout(() => {
         this.loading = false;
         clearTimeout(timer);
-      }, 500);
+      }, 1000);
     },
   },
 };

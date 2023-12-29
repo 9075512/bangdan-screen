@@ -112,11 +112,8 @@ function alarmNum() {
     const a = Mock.mock({
         success: true,
         data: {
-            dateList:['2021-11', '2021-12', '2022-01', '2022-02', '2022-03',"2022-04"],
-            "numList|6":[
-                '@integer(0, 1000)'
-            ],
-            "numList2|6":[
+            dateList:['2021-11'],
+            "numList":[
                 '@integer(0, 1000)'
             ]
         }
